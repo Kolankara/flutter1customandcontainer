@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import './widgets/basicWidget.dart';
+//import './widgets/singleChildLayouts.dart';
+//import './widgets/multiChildLayouts.dart';
+import './widgets/stackWidget.dart';
 
 class App extends StatelessWidget {
   @override
@@ -7,9 +9,8 @@ class App extends StatelessWidget {
     return MaterialApp(
       title: "Mallu developer",
       home: Scaffold(
-        body: Center(
-          child:BasicWidget(),//container widget can be provided inside child if there was no media query in width and height
-          ),
+        body:StackWidget(),//container widget can be provided inside child if there was no media query in width and height
+      
         ),
       );
 
